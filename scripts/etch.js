@@ -1,8 +1,12 @@
 function changeColor(e) {
     x = e.target;
-    console.log(x);
-    x.style.backgroundColor != 'red' ? x.style.backgroundColor = 'red' : x.style.backgroundColor = 'black';
-    console.log(e);
+    if (x.classList.contains('pixel')) {
+        x.classList.add('touched');
+    } else if (x.classList.contains('pixel') && x.classList.contains('touched')){
+        x.classList.add('alternate');
+    } else {
+        x.classList.add('pixel');
+    }
 }
 
 window.onload = function() {

@@ -38,3 +38,11 @@ body {
     min-height: 20px;
     max-height: 20px;
 }
+
+.pixel .touched {
+    background-color: red !important;
+}
+
+.pixel .alternate {
+    background-color: black !important;
+}
